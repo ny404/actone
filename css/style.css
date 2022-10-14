@@ -135,7 +135,7 @@ section.about-us, section.find-us { padding: 0; max-width: 100%; align-items: ce
 	background-size: cover;
 	height: 85vh;
 }
-section.find-us address { text-align: center; }
+section.find-us address, section.find-us p { text-align: center; }
 table.business-hours th {
   text-align: right; 
 }
