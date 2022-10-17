@@ -54,6 +54,17 @@ header {
     cursor: url("../images/close.png") 16 16, pointer;
 }
 
+.fade {
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: all 1s;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 main { background: #f7f9f9; }
 footer { 
 	background: #160F29;
@@ -127,8 +138,11 @@ section {
 	flex-wrap: wrap;
 }
 section:after { content:''; display: table; }
-section.history { background: #000; }
+section.history { background: #000; align-items: center; }
 section.history h2, section.history p { color: #fff; }
+section.history img.spotpos-01 { margin: 5% 1%; }
+section.history img.spotpos-02 { margin-top: 2.5%; }
+section.history img.spotpos-03 { margin: 5% auto; }
 section.about-us, section.find-us { padding: 0; max-width: 100%; align-items: center; }
 .about-img, .map-img { 
 	background: center center no-repeat;
@@ -235,6 +249,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	h1, h2, h3 { margin-top: 2.5%; margin-bottom: 2.5%; }
 	header { height: 100vh; }
 	.branding-menu { width: 200px; height: 200px; }
+	section.history { flex-direction: column-reverse; }
 	section.about-us { flex-direction: column-reverse; }
 	a.map-button { margin: 10% auto; }
 	.about-img, .map-img { height: 50vh; }
