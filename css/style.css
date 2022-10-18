@@ -140,8 +140,8 @@ section {
 section:after { content:''; display: table; }
 section.history { background: #000; align-items: center; }
 section.history h2, section.history p { color: #fff; }
-section.history img.spotpos-01 { margin: 5% 1%; }
-section.history img.spotpos-02 { margin-top: 2.5%; }
+section.history img.spotpos-01 { margin: 10% 0; }
+section.history img.spotpos-02 { margin-left: 5%; }
 section.history img.spotpos-03 { margin: 5% auto; }
 section.about-us, section.find-us { padding: 0; max-width: 100%; align-items: center; }
 .about-img, .map-img { 
@@ -250,6 +250,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	header { height: 100vh; }
 	.branding-menu { width: 200px; height: 200px; }
 	section.history { flex-direction: column-reverse; }
+	section.history img.spotpos-02 { margin-left: 25%; }
 	section.about-us { flex-direction: column-reverse; }
 	a.map-button { margin: 10% auto; }
 	.about-img, .map-img { height: 50vh; }
